@@ -1,44 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="cover cover-left"></div>
-        <div class="cover cover-right"></div>
-        <div class="book"
-           <!-- propile page -->
-          <div class="book-page.page-left">
-            <div class="profile-page">
-                <img src="images/image.jpeg" alt="">
-                <h1>Boikanyo Baitshepi Silabel</h1>
-                <h3>Web Developer</h3>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="style.css">
+        
 
-                <div class="social-media">
-                <a href="3"><i class='bx bxl-facebook'></i></a>
-                <a href="3"><i class='bx bxl-linkedin'></i></a>
-                </div>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
 
-                <p>Hi, I'm Boikanyo Baitshepi Silabel. I am a dedicated and passionate software developer with a strong background in full-stack web development.I have honed my skills in JavaScript, among others, and have a proven track record of delivering exceptional results. My passion for creating seamless user experiences and solving complex problems drives me to continuously learn and adapt to new technologies and methodologies in the rapidly evolving field of software development. I thrive in collaborative environments, where I can leverage my strong communication and problem-solving abilities to drive projects forward. As someone who is deeply committed to delivering high-quality code and exceeding client expectations, I am excited about the opportunity to contribute to innovative projects and make a meaningful impact. Let's connect and explore how we can work together to bring your ideas to life.</p>
-           
-                <div class="btn-box">
-                    <a href="#" class="btn">Download CV</a>
-                    <a href="#" class="btn contact me">Contact</a>
-                </div>
-           
-           
             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#mywork" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Boikanyo Baitshepi Silabel</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end developer</p>
+            <img src="images/portfolio.jpg" alt="">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design and Development</h3>
+                    <p>As a frontend developer, I specialize in crafting engaging and intuitive user experiences for websites and web applications. Leveraging my expertise in HTML, CSS, and JavaScript, I transform design concepts into pixel-perfect, responsive interfaces that captivate users and drive engagement. With a keen eye for detail and a passion for clean, maintainable code, I ensure that every project I work on not only meets but exceeds industry standards for performance, accessibility, and cross-browser compatibility. From implementing interactive features and animations to optimizing site speed and usability, I thrive on the challenges of frontend development and take pride in delivering high-quality solutions that make a lasting impact. Whether collaborating with designers, backend developers, or clients, I approach every project with enthusiasm, creativity, and a commitment to excellence. Let's collaborate and bring your vision to life on the web.</p>
+                </div> <!-- / service -->
+                
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+           
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based in Rusterburg</p>
+           
+           <div class="about-me__body">
+               <p>I am a dedicated and passionate software developer with a strong background in full-stack web development.I have honed my skills in JavaScript, among others, and have a proven track record of delivering exceptional results. My passion for creating seamless user experiences and solving complex problems drives me to continuously learn and adapt to new technologies and methodologies in the rapidly evolving field of software development. I thrive in collaborative environments, where I can leverage my strong communication and problem-solving abilities to drive projects forward. As someone who is deeply committed to delivering high-quality code and exceeding client expectations, I am excited about the opportunity to contribute to innovative projects and make a meaningful impact. Let's connect and explore how we can work together to bring your ideas to life.
+
+               </p>
            </div>
-    </div>
-</div>
-    
+           
+           <img src="images/clear.jpg" alt="" class="about-me__img">
+        </section>
+            
+            </div>
+        </section>
 
+        <!--my work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/mywork2.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/download (2).jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/images.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/mywork.jpg" alt="" class="portfolio__img">
+                </a>
+                
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+        
+                <div class="contact-info">
+                    <!-- Phone icon -->
+                    <i class="fas fa-phone"></i>
+                    
+                    <span>0793824406</span>
+                </div>
 
+                <div class="contact-info">
+                    <!--Discord icon-->
+                   <i class="fab fa-discord"></i>
+                   <span>Boikanyo Silabel</span>
+                </div>
+                
+                
+                <div class="contact-info">
+                    <!-- Email icon -->
+                    <i class="fas fa-envelope"></i>
+                    <span>boikanyobaitshepi@gmail.com</span>
+                </div>
 
-<script src="index.js"></script>
-</body>
+                <div class="contact-info">
+                    <!--codepen.io icon -->
+                    <i class="fab fa-codepen"></i>
+                    <span>https://codepen.io/boikanyobaitshepi</span>
+                </div>
+
+                <div class="contact-info">
+                    <!--github icon -->
+                    <i class="fab fa-github"></i>
+                    <span>boikanyobaitshepi</span>
+                </div>
+            </ul>
+
+            <p>&copy;2024 Codespace Cat. All Rights Reserved.</p>
+        </footer>
+
+        <script src="index.js"></script>
+        
+    </body>
 </html>
