@@ -1,12 +1,7 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link')
-
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
+const typed = new Typed(".text", {
+    strings: ["Frontend Developer", "Web Developer", "Software Engineer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
 });
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
-})
