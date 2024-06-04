@@ -80,7 +80,6 @@ body {
 .home-content h3 span{
     color:#0ef
 }
-
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
@@ -88,13 +87,97 @@ body {
     opacity: 1;
     animation: slideRight 1s ease forward;
     animation-delay: 1s;
+
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+
+}
+.bar{
+    font-size: 23px;
+}
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px ;
+    background-color: #8ce46f;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+       transform: scaleX(1); 
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 85%;
+}
+.progress-line.css span{
+    width: 70%;
+}
+.progress-line.javascript span{
+    width: 78%;
+}
+.progress-line.react span{
+    width: 75%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
 }
 
 .home-content p {
     font-size: 20px;
     opacity: 0;
     animation: slideBottom 1s ease forward;
-    animation-delay: 1s;
 }
 .profile-picture {
     position: relative;
@@ -223,3 +306,252 @@ body {
         opacity: -1;
     }
 }
+.skills-section {
+    padding: 50px 10%;
+    background-color: #121212;
+    color: #ededed;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skill-bar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.skill-percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #0ef;
+    color: #121212;
+    border-radius: 15px;
+    transition: width 1s ease-in-out;
+}
+.contact {
+    padding: 100px 10%;
+    background: #121212;
+}
+
+.contact .sub-title {
+    font-size: 40px;
+    text-align: center;
+    color: #ededed;
+    margin-bottom: 50px;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #0ef;
+    outline: none;
+    resize: none;
+}
+
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:focus ~ span,
+.input-box textarea:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #0ef;
+}
+
+.input-box input[type="submit"] {
+    background: #0ef;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #121212;
+    border-radius: 30px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.input-box input[type="submit"]:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+.skills-section {
+    padding: 100px 10%;
+    background: #121212;
+}
+
+.skills-section .sub-title {
+    font-size: 40px;
+    text-align: center;
+    color: #ededed;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.skill-icon {
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+.skill-name {
+    flex: 1;
+    font-size: 24px;
+    color: #ededed;
+}
+
+.skill-bar {
+    flex: 3;
+    background: #2c2c2c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-percentage {
+    background: #0ef;
+    color: #121212;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Icon Colors */
+.html-icon {
+    color: #e34c26; /* HTML icon color */
+}
+
+.css-icon {
+    color: #264de4; /* CSS icon color */
+}
+
+.js-icon {
+    color: #f0db4f; /* JavaScript icon color */
+}
+
+.react-icon {
+    color: #61dafb; /* React icon color */
+}
+
+
+.projects-container {
+    display:grid;
+    flex-wrap:wrap;
+    gap: 2px;
+}
+
+.project {
+    background: #1f1f1f;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.project:hover {
+    transform: translateY(-10px);
+
+}
+.project-img {
+    width: 20%; /* Ensure the image doesn't exceed its container */
+    height: auto; 
+    translate: -80%;
+}
+
+
+.project-info {
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    color: #ededed;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #cfcfcf;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0ef;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #0cf;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+
+
+}
+
