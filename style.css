@@ -509,16 +509,19 @@ section{
     align-items: center;
     width: 300px; /* Adjust the width as needed */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 2rem;
 }
 
 .project:hover {
     transform: translateY(-10px);
 
 }
-.project-img {
-    width: 20%; /* Ensure the image doesn't exceed its container */
-    height: auto; 
-    translate: -80%;
+.project>img {
+    width: 100%; /* Ensure the image doesn't exceed its container */
+    height: 100%; 
+    /* translate: -80%; */
+    /* overflow: hidden; */
+    /* object-fit: cover; */
 }
 
 
