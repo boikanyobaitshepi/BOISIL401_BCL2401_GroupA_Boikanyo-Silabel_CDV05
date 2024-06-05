@@ -79,3 +79,16 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Send the form data to EmailJS
+    emailjs.sendForm('service_3gytl1r', 'template_tyyckab', this)
+        .then(function() {
+            alert('Message sent successfully!');
+        }, function(error) {
+            alert('Failed to send the message. Please try again.');
+        });
+});
+
